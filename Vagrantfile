@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "chef_solo" do |chef|
     chef.cookbooks_path = "./cookbooks"
     chef.add_recipe "pythonAppChefAlpha"
-    chef.arguments = "--chef-license accept"
+    chef.arguments = "--chef-license accept" 
   end
 end
   # config.vm.provision "shell", path: "environment/app/provision.sh"
